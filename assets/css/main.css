@@ -73,11 +73,8 @@ input, select, textarea {
 }
 
 .icon-img{
-	display: inline-block;
-  vertical-align: middle;
-	border-radius: 50%;
-	width: 95%;
-	height: 95%;
+	width: 100px;
+	height: 100px;
 }
 
 /* Basic */
