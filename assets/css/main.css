@@ -4215,6 +4215,11 @@ a.anchor-other {
 				margin-top: 0;
 			}
 
+			.code{
+				width: 100%;
+				margin: auto;
+			}
+
 	}
 
 	@media screen and (max-width: 360px) {
