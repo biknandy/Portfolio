@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -80,6 +82,27 @@ input, select, textarea {
 .code{
 	width: 85%;
 	margin: auto;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -85px;
+    visibility: hidden;
+}
+
+a.anchor-project {
+    display: block;
+    position: relative;
+    top: -25px;
+    visibility: hidden;
+}
+
+a.anchor-other {
+    display: block;
+    position: relative;
+    top: -5px;
+    visibility: hidden;
 }
 
 /* Basic */
