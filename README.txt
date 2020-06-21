@@ -1,1 +1,1 @@
-[Personal Website](https://biknandy.com/)
+https://biknandy.com/
