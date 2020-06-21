@@ -3018,7 +3018,8 @@ a.anchor-other {
 			input[type="button"],
 			button,
 			.button {
-				padding: 10px;
+				padding-left: 7px;
+				padding-right: 7px;
 			}
 
 		}
