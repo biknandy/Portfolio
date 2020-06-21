@@ -2172,6 +2172,8 @@ a.anchor-other {
 
 		@media screen and (max-width: 480px) {
 
+
+
 			form > .fields {
 				width: calc(100% + 3em);
 				margin: -1.5em 0 2em -1.5em;
@@ -3016,7 +3018,7 @@ a.anchor-other {
 			input[type="button"],
 			button,
 			.button {
-				padding: 0;
+				padding: 10px;
 			}
 
 		}
