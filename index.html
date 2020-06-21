@@ -31,11 +31,11 @@
 					<nav id="menu">
 						<div class="inner">
 							<ul class="links">
-								<li><a href="#aboutAnchor">About Me</a></li>
-								<li><a href="#devAnchor">Development</a></li>
-								<li><a href="#hobbiesAnchor">Hobbies</a></li>
-								<li><a href="#projectAnchor">Projects</a></li>
-								<li><a href="#contactAnchor">Contact</a></li>
+								<li><a href="#aboutAnchor" onclick="aboutClick()">About Me</a></li>
+								<li><a href="#devAnchor" onclick="devClick()">Development</a></li>
+								<li><a href="#hobbiesAnchor" onclick="hobClick()">Hobbies</a></li>
+								<li><a href="#projectAnchor" onclick="projClick()">Projects</a></li>
+								<li><a href="#contactAnchor" onclick="contClick()">Contact</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -76,7 +76,7 @@
 									<div class="content">
 										<h2 class="major">Development</h2>
 										<p><strong>I love to code!</strong> I have recently completed a 1-year internship at Praevium Research, a company that designs and fabricates lasers. Here, I have fallen in love with Full Stack Development, including database design and mobile-first web application production. In my free time, I enjoy developing elegant applications that apply machine learning to solve real-world problems. &#x1F916; </p>
-										<a href="#projectAnchor" class="special">Check out my projects!</a>
+										<a href="#projectAnchor" onClick="projClick()" class="special">Check out my projects!</a>
 									</div>
 								</div>
 								<div class="inner">
@@ -224,13 +224,55 @@
 
 			</div>
 
+			<button onclick="topFunction()" class = "myclass" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-3x"></i></i>
+			</button>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/zenscroll.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/zenscroll-min.js"></script>
+			<script>
+				//clicks for scrolling
+				function aboutClick (){
+					var about = document.getElementById("aboutAnchor")
+					zenscroll.to(about)
+				}
+				function devClick (){
+					var dev = document.getElementById("devAnchor")
+					zenscroll.to(dev)
+				}
+				function hobClick (){
+					var hob = document.getElementById("hobbiesAnchor")
+					zenscroll.to(hob)
+				}
+				function projClick (){
+					var proj = document.getElementById("projectAnchor")
+					zenscroll.to(proj)
+				}
+				function contClick (){
+					var cont = document.getElementById("contactAnchor")
+					zenscroll.to(cont)
+				}
+
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+					 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+							document.getElementById("myBtn").style.display = "block";
+					 } else {
+							document.getElementById("myBtn").style.display = "none";
+					 }
+				}
+
+				function topFunction() {
+					 $('html,body').animate({ scrollTop: 0 }, 1000);
+				}
+			</script>
 
 	</body>
 </html>
