@@ -224,9 +224,6 @@
 
 			</div>
 
-			<button onclick="topFunction()" class = "myclass" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-3x"></i></i>
-			</button>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -257,20 +254,6 @@
 				function contClick (){
 					var cont = document.getElementById("contactAnchor")
 					zenscroll.to(cont)
-				}
-
-				window.onscroll = function() {scrollFunction()};
-
-				function scrollFunction() {
-					 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-							document.getElementById("myBtn").style.display = "block";
-					 } else {
-							document.getElementById("myBtn").style.display = "none";
-					 }
-				}
-
-				function topFunction() {
-					 $('html,body').animate({ scrollTop: 0 }, 1000);
 				}
 			</script>
 
